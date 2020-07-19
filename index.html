@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber</title>
+    <!--start css files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end js files -->
+</head>
+<body>
+    <!-- start navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item " onclick="homescroll()">
+                <a class="nav-link"><span class="span1"></span>Home</a>
+               
+              </li>
+              <li class="nav-item " onclick="aboutscroll()">
+                <a class="nav-link"><span class="span2"></span>AboutUs</a>
+              </li> <li class="nav-item ">
+                <a class="nav-link" onclick="barberscroll()"> <span class="span3"></span>OurBarbers</a>
+              </li>
+              <li class="nav-item" onclick="servicescroll()">
+                <a class="nav-link"><span class="span4"></span>OurServices</a>
+              </li>
+              <li class="nav-item" onclick="contactscroll()">
+                <a class="nav-link"><span class="span5"></span>Contact</a>
+              </li>
+          </ul>
+         
+        </div>
+    </div>
+      </nav>
+    <!-- end navbar section -->
+
+    <!-- start carousel section -->
+    <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+   
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slide1">
+              <div class="overlay"></div>
+          </div>
+            <img src="images/bg1.png" class="d-block w-100" alt="bg1">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>The Barber Shop</h2>
+              <h3>In NewYork</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide1">
+              <div class="overlay"></div>
+          </div>
+            <img src="images/bg2.png" class="d-block w-100" alt="bg2">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>The Barber Shop</h2>
+              <h3>In NewYork</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide1">
+              <div class="overlay"></div>
+          </div>
+            <img src="images/bg3.png" class="d-block w-100" alt="bg3">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>The Barber Shop</h2>
+              <h3>In NewYork</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+ 
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>   
+    <!-- end carousel section -->
+    <!-- start About section -->
+ <div class="About">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-6 col-xs-12">
+         <div class="info">
+          <h6>ABOUT</h6>
+          <h2>Welcome to SMBarber</h2>
+          <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+          <p>Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo.</p>
+          <buton class="btn">Learn More</buton>
+       
+         </div>
+       </div>
+       <div class="col-md-6 col-xs-12">
+        <div class="pic">
+         <img src="images/pic1.png"/>
+        </div>
+      </div>
+
+     </div>
+   </div>
+ </div>
+    <!-- end About section -->
+
+    <!-- start tabs  -->
+  <div class="tabs">
+    <div class="container">
+     
+        <ul class="Ulist list-unstyled text-center">
+          <li id="tab1" class="Cactive">Our Missions</li>
+          <li id="tab2" class="">Why Us?</li>
+          <li id="tab3" class="">About Us</li>
+        </ul>
+     
+        <div id="tab1-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque tortor mi, eget mattis velit sagittis id. Duis ornare mauris eu eros interdum, vitae finibus arcu ultricies. Donec vitae felis eleifend, dignissim erat a, pretium diam. Donec eu massa odio. Suspendisse et ornare lacus, pharetra imperdiet ligula.
+          Vestibulum ac quam id lorem semper condimentum. Nulla vel ligula turpis. Nullam luctus, mi nec rhoncus gravida, tortor est semper purus, a feugiat sapien odio non urna. Fusce pellentesque neque ut nisi rhoncus imperdiet. Sed eu purus vel turpis consectetur convallis. Donec a dolor tellus. Phasellus dignissim erat nec ipsum condimentum sollicitudin.
+        </div>
+        <div id="tab2-content">
+         Because here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </div>
+        <div id="tab3-content">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </div>
+      
+    </div>
+  </div>
+
+    <!-- end tabs -->
+
+    <!-- start about barbers  -->
+ <div class="barber-info">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-4 col-xs-12">
+       <div class="binfo">
+         <img class="img-responsive" src="images/barber_01.jpg">
+         <h3>The Barber Material</h3>
+         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+      </div>
+       </div>
+
+       <div class="col-md-4 col-xs-12">
+        <div class="binfo">
+          <img class="img-responsive" src="images/barber_02.jpg">
+          <h3>The Barber Material</h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+       </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+          <div class="binfo">
+            <img class="img-responsive" src="images/barber_03.jpg">
+            <h3>The Barber Material</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+         </div>
+          </div>
+     </div>
+   </div>
+ </div>
+    <!-- end about barbers  -->
+
+    <!-- start pricing  -->
+    <div class="pricing">
+      <div class="container">
+        <h6 class="text-center">OUR BABRER PRICING</h6>
+        <h3 class="text-center">BABRER PRICING</h3>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="price p1 text-center">
+              <span>
+               <span class="Cspan c0">
+               </span> 
+              </span>
+              <h4>Shaving</h4>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$5</span>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$10</span>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$15</span>
+              
+
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="price p2 text-center">
+              <span>
+               <span class="Cspan c1">
+               </span> 
+              </span>
+              <h4>Face Masking</h4>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$5</span>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$10</span>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$15</span>
+              
+
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="price p3 text-center">
+              <span>
+               <span class="Cspan c2">
+               </span> 
+              </span>
+              <h4>Hair Styling</h4>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$5</span>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$10</span>
+              <h6>Lorem ipsum dolor</h6>
+              <hr>
+              <p>There are many variations of passages of Lorem Ipsum available by injected humour.</p>
+              <span class="span">$15</span>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pricing -->
+<!-- start contact  -->
+
+<div class="contact">
+  <div class="container">
+         <div class="form-box">
+         <h6 class="text-center">GET IN TOUCH</h6>
+         <h3 class="text-center">Contact Us</h3>
+           <form>
+               <div class="row">
+               <div class="col-xs-12 col-md-6">
+               <input type="text" placeholder="First Name">
+             </div>
+               <div class="col-xs-12 col-md-6">
+               <input type="text" placeholder="Last Name">
+             </div>
+         </div>
+         
+             <div class="col-xs-12">
+               <input type="email" placeholder="E-mail">
+             </div>
+        
+         
+             <div class="col-xs-12">
+               <textarea placeholder="Message"></textarea>
+             </div>
+             
+              <button> Send Message</button>
+           </form>
+    
+    
+      </div>
+  </div>
+</div>
+<!-- end contact  -->
+
+<!-- start footer  -->
+<div class="copyrights">
+  <div class="container">
+    <div class="footer-distributed text-center">
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
+        </p>
+        <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">StyleBarber</a> Design By : <a href="#">Merna Nabil</a></p>
+      </div>
+    </div>
+  </div><!-- end container -->
+<!-- end footer  -->
+
+
+    <!-- start  js files -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/javascript.js"></script>
+    <!-- end js files -->
+</body>
+</html>
